@@ -78,40 +78,49 @@ body {
 }
 
 /*fix the hover effect for the image*/
-.section-one img {
-    max-width: 1080px;
-    min-width: 320px;
-    width: 100%;
-    border-radius: 15px;
+.section-one img{
     position: relative;
-    z-index: -1;
-    filter: brightness(50%);
+    filter: brightness(60%);
     transition: filter 0.3s ease;
+    aspect-ratio: 16/9;
+    max-width: 1350px;
+    width: 100%;
+    height: 650px;
+    border-radius: 20px;
 }
 
-.newest-blog-container img:hover {
-    filter: brightness(100%);
+.section-one a img:hover {
+    filter: brightness(70%);
 }
 
-.section-one .newest-blog-text-container {
+.section-one a {
+    text-decoration: none;
+}
+
+.newest-blog-container .newest-blog-text-container {
     position: absolute;
-    left: 0;
-    bottom: 250px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 100px;
+    margin-left: 50px;
+    color: white;
     z-index: 1;
+    max-width: 600px;
     width: 100%;
 }
 
-.newest-blog-container h1 {
-    color: white;
-    width: 632px;
-    font-size: 40px;
-    padding-bottom: 20px;
+.newest-blog-text-container h1 {
+    font-size: 3rem;
 }
 
-.newest-blog-container p {
-    color: white;
-    width: 514px;
-    padding-bottom: 20px;
+.newest-blog-text-container h1, .newest-blog-text-container p {
+    padding-bottom: 10px;
+    letter-spacing: 0.5px;
 }
+
+.newest-blog-text-container p .description {
+    font-size: 1.1rem;
+}
+
+
+
+
+
