@@ -77,10 +77,10 @@ body {
     position: relative;
 }
 
-/*fix the hover effect for the image*/
+/*try and fix the width of the pic and make it longer*/
 .section-one img{
     position: relative;
-    filter: brightness(60%);
+    filter: brightness(40%);
     transition: filter 0.3s ease;
     aspect-ratio: 16/9;
     max-width: 1350px;
@@ -90,7 +90,7 @@ body {
 }
 
 .section-one a img:hover {
-    filter: brightness(70%);
+    filter: brightness(60%);
 }
 
 .section-one a {
@@ -99,7 +99,7 @@ body {
 
 .newest-blog-container .newest-blog-text-container {
     position: absolute;
-    bottom: 100px;
+    bottom: 80px;
     margin-left: 50px;
     color: white;
     z-index: 1;
