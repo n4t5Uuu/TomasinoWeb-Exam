@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins, Sans-serif;
+    letter-spacing: 0.7px;
 }
 
 body {
@@ -78,7 +79,8 @@ body {
 }
 
 .section-one .blog-banner{
-    width: 1500px;
+    max-width:1500px;
+    width: 90vw;
     height: 600px;
 }
 
@@ -119,7 +121,6 @@ img  {
 
 .newest-blog-text-container h1, .newest-blog-text-container p {
     padding-bottom: 10px;
-    letter-spacing: 0.5px;
 }
 
 .newest-blog-text-container p .description {
@@ -187,9 +188,7 @@ img  {
     display: inline-block;
 }
 
-.title-container h4 {
-    font-size: 1.1rem;
-}
+
 
 .section-one {
     margin-bottom: 50px;
