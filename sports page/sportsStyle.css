@@ -153,6 +153,10 @@ footer .links {
     display: flex;
     gap: 27px;
 }
+footer .fa-copyright {
+    font-size: 1rem;
+}
+
 
 /*css for the articles*/
 .articles {

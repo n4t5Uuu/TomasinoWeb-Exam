@@ -10,12 +10,21 @@
     text-decoration: none;
 }
 
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
 body {
     min-width: 320px;;
 }
 
 a {
     color: black;
+}
+
+img {
+    border-radius: 20px;
 }
 /*css for navbar*/
 .navbar {
@@ -86,3 +95,84 @@ a {
 .title-and-desc-container p {
     font-family: IBM Plex Sans, Poppins, Sans-serif;
 }
+
+/*css for footer*/
+footer {
+    width: 100vw;
+    height: 50px;
+    background-color: #191a1c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h4, footer i {
+    color: white;
+    font-family: IBM Plex Sans, Poppins, Sans-serif;
+}
+
+footer h4 {
+    font-weight: 400;
+}
+
+footer .text-container {
+    margin-left: 100px;
+}
+
+footer .social-links {
+    width: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+
+footer i {
+    font-size: 1.5rem;
+}
+
+footer .links {
+    display: flex;
+    gap: 27px;
+}
+
+footer .fa-copyright {
+    font-size: 1rem;
+}
+/*css for main*/
+main {
+    margin-top: 80px;
+    margin-bottom: 80px
+}
+
+.main-article-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 55%;
+    background-color: #bb7082;
+    position: relative;
+    margin-bottom: 300px;
+}
+
+.img-container {
+    position: absolute;
+    border: 1px solid black;
+    width: 70%;
+    height: 550px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-container img {
+    border: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
