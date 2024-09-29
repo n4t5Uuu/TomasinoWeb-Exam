@@ -16,7 +16,7 @@ html, body {
 }
 
 body {
-    min-width: 320px;;
+    min-width: 320px;
 }
 
 a {
@@ -104,6 +104,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    top: 226%
 }
 
 footer h4, footer i {
@@ -140,39 +142,235 @@ footer .fa-copyright {
     font-size: 1rem;
 }
 /*css for main*/
-main {
-    margin-top: 80px;
-    margin-bottom: 80px
-}
 
 .main-article-container {
-    width: 100vw;
-    height: 100vh;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 100%;
+    height: 450px;
+    position: relative;
+    display: block;
 }
 
 .container {
-    width: 100%;
-    height: 55%;
     background-color: #bb7082;
+    width: 100%;
+    height: 600px;
     position: relative;
-    margin-bottom: 300px;
+    padding: 20px;
 }
 
 .img-container {
-    position: absolute;
-    border: 1px solid black;
-    width: 70%;
-    height: 550px;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 600px;
+    position: relative;
+    top: 150px;
+    left: 10px;
+    margin: 20px auto;
 }
 
 .img-container img {
-    border: 20px;
-    height: 100%;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
+.container2 {
+    width: 100%;
+    position: relative;
+    top: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.details-container {
+    position: relative;
+    width: 55%;
+    margin: auto;
+}
+
+.details-container h1 {
+    font-family: IBM Plex Serif, Poppins, Sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.title-container, .desc-container, .owner-date-container {
+    margin-bottom: 30px;
+}
+
+.desc-container h4, .owner-date-container h5, .article p {
+    font-family: IBM Plex Sans, Poppins, Sans-serif;
+}
+
+.desc-container {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.desc-container h4 {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.owner-date-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.owner-date-container h5 {
+    font-size: 1.1rem;
+}
+
+.owner-date-container i {
+    font-size: 1.3rem;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.article p {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+hr {
+    position: relative;
+    top: 300px;
+    width: 85%;
+    margin: 0 auto;
+    background-color: #D9D9D9;
+}
+
+.related-articles-container {
+    width: 85%;
+    height: 100px;
+    position: relative;
+    top: 191%;
+    margin: 0 auto;
+}
+
+.text-container h2 {
+    font-size: 2rem;
+    font-family: IBM Plex Serif, Poppins, Sans-serif;
+}
+
+.latest-blog-container {
+    max-width: 1500px;
+    width: 100%;
+    margin: auto;
+}
+
+.latest-blog-container h2 {
+    font-size: 2rem;
+    font-family: IBM Plex Serif, Poppins, Sans-serif;
+}
+
+.latest-blog-container .text-container {
+    margin-bottom: 30px;
+}
+
+.latest-blog-container .latest-article-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.latest-article-container .articles-container {
+    width: 250px;
+}
+
+.latest-blog-container .card-container {
+    width: 250px;
+    height: 140px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.articles-container a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+}
+
+.articles-container a:hover .card-container::after {
+    opacity: 1;
+}
+
+.articles-container .title-container h4 {
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.articles-container a:hover .title-container h4 {
+    color: rgba(0, 0, 0, 0.7);
+    opacity: 0.8;
+}
+
+.articles-container a {
+    color: black;
+}
+
+.articles-container .details-container {
+    margin-bottom: 15px;
+}
+
+.genre {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.latest-article-container .details-container {
+    width: 100%
+}
+
+.details-container .genre, .details-container .date {
+    display: inline-block;
+}
+
+.details-container .date, .big-blog-container .date {
+    font-size: 0.9rem;
+    font-family: IBM Plex Sans, Poppins, Sans-serif;
+    font-weight: 400;
+}
+
+.title-container h4{
+    font-weight: 700;
+}
+
+.section-one {
+    margin-bottom: 80px;
+}
+
+.articles-container .date, .genre, .title-container h4 {
+    font-family: IBM Plex Serif, Poppins, Sans-serif;
+} 
 
