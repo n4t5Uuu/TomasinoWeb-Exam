@@ -10,6 +10,11 @@
     text-decoration: none;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     min-width: 320px;;
 }
@@ -92,11 +97,11 @@ main .title-and-desc-container  {
     align-items: center;
     margin-bottom: 80px;
     margin-top: 80px;
-    background-color: #dd8e54;
+    background-color: #ad8ebf;
 }
 
 .title-and-desc-container .text-container {
-    margin-left:  130px;
+    margin-left: 130px;
     display: flex;
     flex-direction: column;
     gap: 20px;

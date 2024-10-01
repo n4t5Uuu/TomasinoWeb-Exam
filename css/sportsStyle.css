@@ -10,6 +10,11 @@
     text-decoration: none;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     min-width: 320px;;
 }
@@ -92,7 +97,7 @@ main .title-and-desc-container  {
     align-items: center;
     margin-bottom: 80px;
     margin-top: 80px;
-    background-color: #ad8ebf;
+    background-color: #bb7082;
 }
 
 .title-and-desc-container .text-container {
@@ -153,10 +158,10 @@ footer .links {
     display: flex;
     gap: 27px;
 }
-
 footer .fa-copyright {
     font-size: 1rem;
 }
+
 
 /*css for the articles*/
 .articles {

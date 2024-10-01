@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.navbar {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #191a1c; 
+    position: fixed; 
+    top: 0;
+    z-index: 9999;
+}
+
+.navbar .site-title {
+    margin-left: 100px; 
+    font-size: 1.1rem;
+    font-family: IBM Plex Serif, Poppins, Sans-serif;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin-right: 100px;
+}
+
+.navbar li a, .navbar a:visited, .navbar a:active {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: IBM Plex Sans, Poppins, Sans-serif;
+}
+
+.navbar a {
+    position: relative;
+}
+
+.navbar a::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0;
+    border-bottom: 3px solid white;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar li {list-style: none;}
+
+/*css for title-and-desc-container*/
+.title-and-desc-container {
+    width: 100vw;
+    height: 400px;
+}
+
+.title-and-desc-container h1 {
+    font-family: IBM Plex Serif, Poppins, Sans-serif;
+}
+
+.title-and-desc-container p {
+    font-family: IBM Plex Sans, Poppins, Sans-serif;
+}
