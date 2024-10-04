@@ -56,3 +56,24 @@ footer .fa-copyright {
     font-size: 1rem;
 }
 
+@media (max-width: 575.98px) {
+    footer {
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        height: 75px;
+    }
+
+    footer .text-container {
+        margin: auto;
+    }
+
+    footer i {
+        font-size: 1rem;
+    }
+
+    footer .social-links {
+        margin: auto;
+    }
+}
+

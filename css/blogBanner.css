@@ -5,7 +5,6 @@
 
 .section-one {
     margin-top: 150px;
-
 }
 
 .section-one .newest-blog-container {
@@ -75,15 +74,22 @@
     }
 
     .newest-blog-container h1 {
-        font-size: 2.3rem;
-        width: 80%;
+        font-size: 2.1rem;
+        width: 75%;
     }
     .newest-blog-container .description {
-        font-size: 0.9rem;
-        width: 80%;
+        font-size: 0.8rem;
+        width: 70%;
     }
 
     .newest-blog-container p{
         font-size: 0.8rem;
     }
+
+    .section-one .blog-banner{
+        max-width:1500px;
+        width: 90vw;
+        height: 500px;
+    }
+    
 }

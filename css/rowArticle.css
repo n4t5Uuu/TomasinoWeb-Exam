@@ -106,3 +106,19 @@
 .articles-container .date, .genre, .title-container h4 {
     font-family: IBM Plex Serif, Poppins, Sans-serif;
 } 
+
+@media (max-width: 575.98px) {
+
+    .latest-blog-container {
+        margin-left: 30px;
+        width: 85%
+    }
+
+    .latest-blog-container .text-container {
+        text-align: center;
+    }
+
+    .latest-blog-container .latest-article-container {
+        flex-direction: column;
+    }
+}
