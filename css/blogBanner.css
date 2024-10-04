@@ -5,6 +5,7 @@
 
 .section-one {
     margin-top: 150px;
+
 }
 
 .section-one .newest-blog-container {
@@ -12,6 +13,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100%;
 }
 
 .section-one .blog-banner{
@@ -43,24 +45,45 @@
     margin-left: 50px;
     color: #fafafa;
     z-index: 1;
-    max-width: 600px;
     width: 100%;
 }
 
 .newest-blog-text-container h1 {
     font-size: 3rem;
     font-family: IBM Plex Serif, Poppins, sans-serif;
+    width: 45%;
 }
 
 .newest-blog-text-container h1, .newest-blog-text-container p {
     padding-bottom: 10px;
+    font-family: IBM Plex Sans, Poppins, Sans-serif;
 }
 
 .newest-blog-text-container .description  {
     font-size: 1.1rem;
     font-family: IBM Plex Sans, Poppins, Sans-serif;
+    width: 40%;
 }
 
 .section-one .newest-blog-container {
     margin-bottom: 60px;
+}
+
+@media (max-width: 575.98px) {
+    .section-one .blog-banner img {
+        filter: brightness(50%);
+    }
+
+    .newest-blog-container h1 {
+        font-size: 2.3rem;
+        width: 80%;
+    }
+    .newest-blog-container .description {
+        font-size: 0.9rem;
+        width: 80%;
+    }
+
+    .newest-blog-container p{
+        font-size: 0.8rem;
+    }
 }
